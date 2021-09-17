@@ -40,10 +40,10 @@ spec:
             - name: JWT_SECRET
               value: TESTING_SECRET
             - name: JWT_TOKEN
-              value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1NjEzMDY3OTAsIm5iZiI6MTU2MDA5NzE5MCwiZW1haWwiOiJ3b2xmQHRoZWRvb3IuY29tIn0.IpM4VMnqIgOoQeJxUbLT-cRcAjK41jronkVrqRLFmmk
+              value: TEST_TOKEN
             - name: TEST_EMAIL
-              value: wolf@thedoor.com
+              value: example@example
             - name: TEST_PASSWORD
-              value: huff-puff
+              value: TEST_PASSWORD
           ports:
             - containerPort: 8080
