@@ -29,3 +29,8 @@ htmlcov/
 .direnv
 
 .github/**
+
+# custom setup
+runner-script/
+aws/
+.vscode/
