@@ -30,7 +30,7 @@ phases:
         - export KUBECONFIG=$HOME/.kube/config
         - sed -i 's@JWT_SECRET_VALUE@'"$JWT_SECRET"'@' simple_jwt_api.yml
         - sed -i 's@JWT_TOKEN_VALUE@'"$JWT_TOKEN"'@' simple_jwt_api.yml
-        - sed -i '@EMAIL_VALUE@'"$TEST_EMAIL"'@' simple_jwt_api.yml
+        - sed -i 's@EMAIL_VALUE@'"$TEST_EMAIL"'@' simple_jwt_api.yml
         - sed -i '@PASSWORD_VALUE@'"$TEST_PASSWORD"'@' simple_jwt_api.yml
   build:
     commands:
