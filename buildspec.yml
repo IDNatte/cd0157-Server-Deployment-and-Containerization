@@ -28,7 +28,7 @@ phases:
         - sed -i 's@CONTAINER_IMAGE@'"$REPOSITORY_URI:$TAG"'@' simple_jwt_api.yml
         - $(aws ecr get-login --no-include-email)
         - export KUBECONFIG=$HOME/.kube/config
-        - sed -i '@JWT_SECRET_VALUE@'"$JWT_SECRET"'@' simple_jwt_api.yml
+        - sed -i 's@JWT_SECRET_VALUE@'"$JWT_SECRET"'@' simple_jwt_api.yml
         - sed -i '@JWT_TOKEN_VALUE@'"$JWT_TOKEN"'@' simple_jwt_api.yml
         - sed -i '@EMAIL_VALUE@'"$TEST_EMAIL"'@' simple_jwt_api.yml
         - sed -i '@PASSWORD_VALUE@'"$TEST_PASSWORD"'@' simple_jwt_api.yml
