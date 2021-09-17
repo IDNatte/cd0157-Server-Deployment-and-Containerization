@@ -42,7 +42,7 @@ spec:
             - name: JWT_TOKEN
               value: TEST_TOKEN
             - name: TEST_EMAIL
-              value: example@example
+              value: TEST_EMAIL
             - name: TEST_PASSWORD
               value: TEST_PASSWORD
           ports:
