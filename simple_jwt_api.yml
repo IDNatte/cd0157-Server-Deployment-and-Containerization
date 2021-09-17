@@ -41,8 +41,6 @@ spec:
               value: JWT_SECRET_VALUE
             - name: JWT_TOKEN
               value: JWT_TOKEN_VALUE
-            - name: TEST_EMAIL
-              value: MY_EMAIL_VALUE
             - name: TEST_PASSWORD
               value: MY_PASSWORD_VALUE
           ports:

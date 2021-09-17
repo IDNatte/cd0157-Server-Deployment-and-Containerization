@@ -9,7 +9,7 @@ import main
 
 SECRET = os.getenv('JWT_SECRET')
 TOKEN = os.getenv('JWT_TOKEN')
-EMAIL = os.getenv('TEST_EMAIL')
+EMAIL = 'wolf@thedoor.com'
 PASSWORD = os.getenv('TEST_PASSWORD')
 
 @pytest.fixture
