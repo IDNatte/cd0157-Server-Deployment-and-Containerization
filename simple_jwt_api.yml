@@ -42,8 +42,8 @@ spec:
             - name: JWT_TOKEN
               value: JWT_TOKEN_VALUE
             - name: TEST_EMAIL
-              value: EMAIL_VALUE
+              value: MY_EMAIL_VALUE
             - name: TEST_PASSWORD
-              value: PASSWORD_VALUE
+              value: MY_PASSWORD_VALUE
           ports:
             - containerPort: 8080
