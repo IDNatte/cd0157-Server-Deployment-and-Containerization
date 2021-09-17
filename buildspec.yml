@@ -28,7 +28,10 @@ phases:
         - sed -i 's@CONTAINER_IMAGE@'"$REPOSITORY_URI:$TAG"'@' simple_jwt_api.yml
         - $(aws ecr get-login --no-include-email)
         - export KUBECONFIG=$HOME/.kube/config
-        # - sed -i 's@myjwtsecret@'"$JWT_SECRET"'@' simple-jwt-api.yml
+        - sed -i 's@TESTING_SECRET@'"$JWT_SECRET"'@' simple-jwt-api.yml
+        - sed -i 's@TESTING_TOKEN@'"$JWT_TOKEN"'@' simple-jwt-api.yml
+        - sed -i 's@example@email.com@'"$TEST_EMAIL"'@' simple-jwt-api.yml
+        - sed -i 's@TEST_PASSWORD@'"$TEST_PASSWORD"'@' simple-jwt-api.yml
   build:
     commands:
       - docker build --tag $REPOSITORY_URI:$TAG .
@@ -45,3 +48,6 @@ artifacts:
 env:
   parameter-store:
     JWT_SECRET: JWT_SECRET
+    JWT_TOKEN: JWT_TOKEN
+    TEST_EMAIL: TEST_EMAIL
+    TEST_PASSWORD: TEST_PASSWORD
